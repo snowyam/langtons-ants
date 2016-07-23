@@ -14,20 +14,20 @@ using namespace std;
 
 // 9 Color States; Max language/command string of 9 currently.
 const int state[][3] = { {255,255,255}, {0,0,0}, {60,20,220},
-						 {128,0,128}, {112,25,25}, {100,120,0},
-						 {0,128,0}, {0,215,255}, {143,143,188},
-						 {255,0,0}, {0,255,0}, {0,128,128}, 
-						 {100,100,100}, {100,200,200}, {150,60,8} };
+                         {128,0,128}, {112,25,25}, {100,120,0},
+                         {0,128,0}, {0,215,255}, {143,143,188},
+                         {255,0,0}, {0,255,0}, {0,128,128}, 
+                         {100,100,100}, {100,200,200}, {150,60,8} };
 
 const int movement[4][2] = { {-1,0},   // Move ant north. Height - 1.
-							 {0,1},    // Move ant east. Width + 1.
-							 {1,0},    // Move ant south. Height + 1.
-							 {0,-1} }; // Move ant west. Width - 1.
+                             {0,1},    // Move ant east. Width + 1.
+                             {1,0},    // Move ant south. Height + 1.
+                             {0,-1} }; // Move ant west. Width - 1.
 
 struct ant_orientation {
-	int x;		// Row and height position.
-	int y;		// Col and width position.
-	int face;	// Direction ant is facing.
+	int x;      // Row and height position.
+	int y;      // Col and width position.
+	int face;   // Direction ant is facing.
 };
 
 int main (int argc, char** argv)
