@@ -12,21 +12,27 @@ $ [program] [string: language/commands] [steps]
 
 ## Example Commands
 ./langton LR 1000000
+
 ![](/img/LR.png)
 
 ./langton RL 1000000
+
 ![](/img/RL.png)
 
 ./langton RLR 4000000
+
 ![](/img/RLR.png)
 
 ./langton LLRR 1000000
+
 ![](/img/LLRR.png)
 
 ./langton LRRRRRLLR 40000000
+
 ![](/img/LRRRRRLLR.png)
 
 ./langton LLRRRLRLRLLR 4000000
+
 ![](/img/LLRRRLRLRLLR.png)
 
 ### Required Packages:
